@@ -14,11 +14,10 @@ public abstract class TuneDecorator implements Tunes{
 		tune.addTuneElement(tuneElement);
 		
 	}
-	public Tune transpose(int interval) {
+	public void transpose(int interval) {
 		
 		tune.transpose(interval);
 		
-		return null;
 	
 	}
 
