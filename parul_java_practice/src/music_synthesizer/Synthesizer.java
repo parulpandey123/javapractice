@@ -4,7 +4,7 @@ import java.beans.FeatureDescriptor;
 
 public class Synthesizer {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args)throws java.lang.Exception {
 		
 		Tunes frereJaques = new PhysicalTune();
 		
