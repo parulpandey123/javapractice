@@ -24,8 +24,15 @@ public class PhysicalTune implements Tunes{
 
 	@Override
 	public String toString() {
+		
+		StringBuffer tune = new StringBuffer();
+		for(TuneElement tuneElement : tuneElements){
+			tune.append(tuneElement.note.noteName + (new Integer(tuneElement.note.noteOctave).toString())+
+					tuneElement.note.value);
+		}
+		return tune.toString();
 	
-		String tune = new String("");
+	/*	String tune = new String("");
 		
 		for (TuneElement tuneElement : tuneElements) {
 			tune = tune + tuneElement.note.noteName + 
@@ -33,6 +40,6 @@ public class PhysicalTune implements Tunes{
 					tuneElement.note.value;
 		}
 		
-		return tune;
+		return tune;*/
 	}
 }
